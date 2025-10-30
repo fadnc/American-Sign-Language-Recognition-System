@@ -59,7 +59,7 @@ model = models.Sequential([
 
     layers.Flatten(),
     layers.Dense(128, activation='relu'),
-    layers.Dense(26, activation='softmax')
+    layers.Dense(30, activation='softmax')
 ])
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
@@ -68,3 +68,4 @@ model.fit(train_generator, epochs=10, validation_data=val_generator)
 
 model.save("asl_model.h5")
 print("✅ Training completed and model saved as 'asl_model.h5'")
+
