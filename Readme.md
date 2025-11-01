@@ -159,5 +159,3 @@ Notebook: [`train_asl.ipynb`](train_asl.ipynb)
 **Accuracy:** ~94%
 **License:** MIT
 
-```
-
