@@ -160,5 +160,4 @@ Notebook: [`train_asl.ipynb`](train_asl.ipynb)
 **License:** MIT
 
 ```
-```
 
