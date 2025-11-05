@@ -11,7 +11,7 @@ gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
     for gpu in gpus:
         tf.config.experimental.set_memory_growth(gpu, True)
-print("✅ Running on:", "GPU" if gpus else "CPU")
+print(" Running on:", "GPU" if gpus else "CPU")
 
 #  Dataset configuration
 train_dir = r'C:\Users\ncfad\American-Sign-Language-Recognition-System\ASL Dataset\asl_alphabet_train'
@@ -90,3 +90,4 @@ plt.plot(history.history['val_accuracy'], label='val acc')
 plt.legend()
 plt.title("Training vs Validation Accuracy")
 plt.show()
+
