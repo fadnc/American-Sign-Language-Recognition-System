@@ -71,7 +71,7 @@ history = model.fit(
 
 #  Save final model
 model.save("asl_model.h5")
-print("✅ Training completed and model saved as 'asl_model.h5'")
+print("Training completed and model saved as 'asl_model.h5'")
 
 #  Evaluate final model accuracy
 val_loss, val_acc = model.evaluate(val_generator)
@@ -90,4 +90,5 @@ plt.plot(history.history['val_accuracy'], label='val acc')
 plt.legend()
 plt.title("Training vs Validation Accuracy")
 plt.show()
+
 
